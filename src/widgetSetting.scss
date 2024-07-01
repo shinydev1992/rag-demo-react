@@ -1,0 +1,241 @@
+html {
+  height: fit-content !important;
+}
+.rcw-poolmanager-overlap {
+  width: 100%;
+  height:100%;
+  position: fixed;
+  background: #000000CC;
+  z-index: 10;
+  top: 0; 
+}
+
+.rcw-poolmanager {
+
+  .rcw-launcher {
+    z-index: 10;
+    position: fixed;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: d;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: d;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-name: d;
+    animation-fill-mode: forwards;
+    align-self: flex-end;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px 1px #b5b5b5;
+    height: 68px;
+    margin-top: 10px;
+    width: 68px;
+    right: 16px;
+    bottom: 101px;
+
+    .rcw-open-launcher {
+      -webkit-animation-delay: 0;
+      -webkit-animation-duration: 0.5s;
+      -webkit-animation-name: c;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-delay: 0;
+      -moz-animation-duration: 0.5s;
+      -moz-animation-name: c;
+      -moz-animation-fill-mode: forwards;
+      animation-delay: 0;
+      animation-duration: 0.5s;
+      animation-name: c;
+      animation-fill-mode: forwards;
+    }
+
+    .rcw-close-launcher {
+      -webkit-animation-delay: 0;
+      -webkit-animation-duration: 0.5s;
+      -webkit-animation-name: b;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-delay: 0;
+      -moz-animation-duration: 0.5s;
+      -moz-animation-name: b;
+      -moz-animation-fill-mode: forwards;
+      animation-delay: 0;
+      animation-duration: 0.5s;
+      animation-name: b;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes d {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes c {
+      0% {
+        transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
+
+    @keyframes b {
+      0% {
+        transform: rotate(-90deg);
+      }
+
+      100% {
+        transform: rotate(0);
+      }
+    }
+  }
+  .rcw-bar-launcher {
+    z-index: 9999;
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 1px #b5b5b5;
+    color: #fff;
+    height: 60px;
+    margin-top: 10px;
+    width: 260px;
+    right: 16px;
+    bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .rcw-conversation-container {
+    z-index: 9999;
+    position: fixed;
+    /* border-radius: 0.4rem; */
+    box-shadow: 0 2px 10px 1px #b5b5b5;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: d;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: d;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-name: d;
+    animation-fill-mode: forwards;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px 1px #b5b5b5;
+    .rcw-conversation-container-header {
+      padding-block: 1rem;
+      margin: 0;
+    }
+    .rcw-chat-time {
+      width: 50px;
+      font-size: 0.8rem;
+    }
+
+    .rcw-chat-message-box {
+      width: auto;
+      padding: 0.7rem 1rem;
+      border-radius: 1rem;
+      max-width: 80%;
+      font-size: 1rem;
+      text-align: start;
+    }
+
+    .rcw-input-message-box {
+      max-height: 48px;
+      align-items: center;
+      /* padding: 0.6rem 0.6rem !important;
+      border: transparent !important; */
+      overflow: hidden !important;
+    }
+
+    .rcw-emoji-picker-container {
+      position: fixed;
+      bottom: 76px;
+    }
+
+    ::-webkit-resizer {
+      display: none;
+    }
+
+    .accordionHeader {
+      height: 60px;
+      padding: 16px 17px;
+      border-radius: 4px;
+      border-color: #e4e8ec;
+      border: 1px solid;
+    }
+
+    .accordionHeader:focus {
+      border-color: #4379d6;
+    }
+
+    .accordionHeader {
+      font-weight: 600;
+      color: #424d57;
+      font-size: 24px;
+    }
+
+    .fg--white {
+      color: white;
+    }
+
+    .fg--light {
+      color: #1f2937;
+    }
+
+    .fg--dark {
+      color: #e5e7eb;
+    }
+
+    .bg--white {
+      background-color: white;
+    }
+
+    .bg--light {
+      background-color: #e5e7eb;
+    }
+
+    .bg--dark {
+      background-color: #1f2937 !important;
+    }
+
+    .bg--darker {
+      background-color: #2b3547;
+    }
+
+    .no-border {
+      border: none !important;
+    }
+
+    .custom-button {
+      border-radius: 5px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      &:active {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #chatbot-widget-floating {
+      width: 60px;
+      height: 60px;
+      bottom: 90px;
+  }
+}
+

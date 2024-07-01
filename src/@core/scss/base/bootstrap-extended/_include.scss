@@ -1,0 +1,23 @@
+// ================================================================================================
+//  File Name: include.scss
+//  Description: Common components file to include all theme specific custom components.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: poolmanager  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: PIXINVENT
+//  Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+// Variables
+// ------------------------------
+
+// Functions
+@import "bootstrap/scss/_functions"; // Bootstrap core function
+@import "functions"; // Bootstrap extended function
+
+// Variables
+@import "variables"; // Bootstrap extended variable override
+@import "bootstrap/scss/_variables"; // Bootstrap core variable
+
+// Mixins
+@import "bootstrap/scss/_mixins"; // Bootstrap core mixins
+@import "mixins"; // Bootstrap extended mixins
